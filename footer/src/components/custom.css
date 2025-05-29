@@ -1,0 +1,60 @@
+/* Hide the default mouse pointer everywhere */
+body, a, button, input, textarea, select {
+    cursor: none !important;
+}
+
+.cursor-dot {
+    position: fixed;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    width: 14px;
+    height: 14px;
+    background: currentColor;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s, box-shadow 0.3s, border 0.3s, background 0.3s;
+    z-index: 99999;
+    box-sizing: content-box;
+    user-select: none;
+    will-change: width, height, border;
+    border: 2.5px solid currentColor;
+    color: white; /* default color */
+}
+
+.cursor-dot.cursor-white {
+    color: white;
+}
+
+.cursor-dot.cursor-black {
+    color: black;
+}
+
+.cursor-dot.hovered {
+    width: 34px;
+    height: 34px;
+    background: transparent;
+}
+
+.cursor-dot.cursor-white.hovered {
+    border: 2.5px solid white;
+    box-shadow: 0 0 8px rgba(255,255,255,0.6);
+}
+
+.cursor-dot.cursor-black.hovered {
+    border: 2.5px solid black;
+    box-shadow: 0 0 8px rgba(0,0,0,0.18);
+}
+
+.cursor-dot.hovered::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 14px;
+    height: 14px;
+    background: currentColor;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}

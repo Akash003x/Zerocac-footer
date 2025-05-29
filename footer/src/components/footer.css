@@ -1,0 +1,198 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-wrapper {
+    background-color: black;
+    width: 100%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.footer-container {
+    width: 85%;
+    margin: 0 auto;
+    color: white;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+.footer-logo-container {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.footer-full-img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.footer-line-full {
+    border: none;
+    border-top: 1px solid white;
+    width: 100%;
+    margin: 0 auto 24px auto;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.social-icons {
+    display: flex;
+    gap: 16px;
+}
+
+.icon-circle {
+    background: white;
+    border-radius: 50%;
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.icon-circle:hover,
+.icon-circle:focus {
+    transform: scale(1.15);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+    background: white;
+}
+
+/* Phone icon pill animation */
+.phone-icon-circle {
+    background: white;
+    border-radius: 20px; 
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 0.4s ease, border-radius 0.4s ease, padding 0.4s ease,
+                transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.phone-icon-circle.expanded {
+    width: 110px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 20px;
+    transform: scale(1.05);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+    background: white;
+}
+
+/* Mail icon pill animation (matches phone) */
+.mail-icon-circle {
+    background: white;
+    border-radius: 20px;
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 0.4s ease, border-radius 0.4s ease, padding 0.4s ease,
+                transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.mail-icon-circle.expanded {
+    width: 110px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 20px;
+    transform: scale(1.05);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+    background: white;
+}
+
+.copy-inline {
+    color: #222;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 4px;
+    white-space: nowrap;
+    user-select: none;
+    display: inline-block;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+.mail-icon-circle:not(.expanded) .copy-inline {
+    opacity: 0;
+}
+
+.icon {
+    color: black;
+    font-size: 20px;
+    transition: color 0.2s ease;
+}
+
+/* Prevent icon color changes on hover */
+.icon-circle:hover .icon,
+.icon-circle:focus .icon {
+    color: black;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links a {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    transition: none;
+}
+
+.nav-links a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        width: 90%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
