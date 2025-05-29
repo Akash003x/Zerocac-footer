@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Zerocac-footer/static/css/main.c8cd9464.css",
+    "main.js": "/Zerocac-footer/static/js/main.ee4137ac.js",
+    "static/js/453.a925fb11.chunk.js": "/Zerocac-footer/static/js/453.a925fb11.chunk.js",
+    "index.html": "/Zerocac-footer/index.html",
+    "main.c8cd9464.css.map": "/Zerocac-footer/static/css/main.c8cd9464.css.map",
+    "main.ee4137ac.js.map": "/Zerocac-footer/static/js/main.ee4137ac.js.map",
+    "453.a925fb11.chunk.js.map": "/Zerocac-footer/static/js/453.a925fb11.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c8cd9464.css",
+    "static/js/main.ee4137ac.js"
+  ]
+}
